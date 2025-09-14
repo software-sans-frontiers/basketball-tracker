@@ -248,6 +248,81 @@ devenv shell
 adb logcat | grep BasketballTracker
 ```
 
+### CI/CD Pipeline ✅ CONFIGURED
+
+#### GitHub Actions Workflow
+**Location**: `.github/workflows/cicd.yml`
+
+#### Pipeline Triggers
+- **Push to main/develop**: Full pipeline execution
+- **Pull Requests**: Test and build validation
+- **Main branch only**: Release creation
+
+#### Pipeline Jobs
+
+##### Phase 1: Parallel Validation
+1. **Lint Check**
+   - Android lint analysis
+   - Code quality validation
+   - Upload HTML reports
+
+2. **Unit Tests**
+   - JUnit test execution
+   - Test report generation
+   - Coverage tracking (future)
+
+3. **Build Debug APK**
+   - Development build
+   - 7-day artifact retention
+   - Available for testing
+
+4. **Build Release APK**
+   - Production optimized build
+   - Main branch only
+   - 30-day artifact retention
+
+5. **Instrumentation Tests**
+   - Emulator-based UI testing
+   - Multiple API levels (29, 34)
+   - Automated AVD management
+
+##### Phase 2: Release Management
+**Create Release** (main branch only)
+- Automatic version generation (v0.1.X)
+- Changelog from commits
+- APK attachment to release
+- Pre-release tagging until v1.0
+
+#### Build Configuration
+- **Java Version**: 21 (Temurin)
+- **Android SDK**: API 36
+- **Build Tools**: 36.0.0
+- **Gradle Caching**: Enabled
+- **Parallel Execution**: Yes
+
+#### Artifacts
+- Lint reports (HTML)
+- Test results (XML/HTML)
+- Debug APK (7 days)
+- Release APK (30 days)
+
+### Version Control
+
+#### Branch Strategy
+- **main**: Production releases
+- **develop**: Integration branch
+- **feature/***: Feature development
+- **fix/***: Bug fixes
+
+#### Commit Standards
+Following conventional commits:
+- `feat:` New features
+- `fix:` Bug fixes
+- `docs:` Documentation
+- `test:` Test additions
+- `ci:` CI/CD changes
+- `refactor:` Code refactoring
+
 ### Testing Strategy
 1. **Unit Tests**: Detection logic, statistics calculation
 2. **Integration Tests**: Camera + ML pipeline
@@ -329,6 +404,7 @@ adb logcat | grep BasketballTracker
 
 | Version | Date | Changes |
 |---------|------|---------|
+| v2.1 | 2025-09-14 | Added CI/CD pipeline documentation, version control strategy |
 | v2.0 | 2025-09-14 | Major update: Added detailed phases, technical challenges, performance requirements |
 | v1.0 | 2025-09-13 | Initial specification |
 
