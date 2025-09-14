@@ -1,7 +1,7 @@
 # 🏀 Basketball Shot Tracker
 
-[![CI/CD](https://github.com/yourusername/basketball-tracker/actions/workflows/cicd.yml/badge.svg)](https://github.com/yourusername/basketball-tracker/actions/workflows/cicd.yml)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![CI/CD](https://github.com/software-sans-frontiers/basketball-tracker/actions/workflows/cicd.yml/badge.svg)](https://github.com/software-sans-frontiers/basketball-tracker/actions/workflows/cicd.yml)
+[![License](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
 [![Android](https://img.shields.io/badge/Android-7.0%2B-green.svg)](https://developer.android.com)
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.0.21-purple.svg)](https://kotlinlang.org)
 
@@ -136,17 +136,15 @@ The project uses GitHub Actions for continuous integration and deployment:
 5. **Instrumentation Tests**: UI testing on emulators
 6. **Create Release**: Automated GitHub releases
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is proprietary software owned by Software Sans Frontiers. All rights reserved.
+
+The source code is not open source and is protected by copyright law. Unauthorized copying, modification, or distribution is strictly prohibited.
+
+For licensing inquiries, contact: ceo@softwaresansfrontiers.com
+
+See the [LICENSE](LICENSE) file for full details.
 
 ## 🙏 Acknowledgments
 
@@ -156,9 +154,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-Michael Edoror - [@yourusername](https://github.com/yourusername)
+Software Sans Frontiers  
+Email: ceo@softwaresansfrontiers.com  
+GitHub: [software-sans-frontiers](https://github.com/software-sans-frontiers)
 
-Project Link: [https://github.com/yourusername/basketball-tracker](https://github.com/yourusername/basketball-tracker)
+Project Repository: [https://github.com/software-sans-frontiers/basketball-tracker](https://github.com/software-sans-frontiers/basketball-tracker) (Private)
 
 ---
 
